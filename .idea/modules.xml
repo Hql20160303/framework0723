@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../SpringSecurityDemo/SpringSecurityDemo.iml" filepath="$PROJECT_DIR$/../SpringSecurityDemo/SpringSecurityDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_jpa/springboot_jpa.iml" filepath="$PROJECT_DIR$/springboot_jpa/springboot_jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springbootdemo01/springbootdemo01.iml" filepath="$PROJECT_DIR$/springbootdemo01/springbootdemo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sptingbootdemo03/sptingbootdemo03.iml" filepath="$PROJECT_DIR$/sptingbootdemo03/sptingbootdemo03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tgshop_parent/tgshop_common_config/tgshop_common_config.iml" filepath="$PROJECT_DIR$/tgshop_parent/tgshop_common_config/tgshop_common_config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tgshop_parent/tgshop_common_dao/tgshop_common_dao.iml" filepath="$PROJECT_DIR$/tgshop_parent/tgshop_common_dao/tgshop_common_dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tgshop_parent/tgshop_common_interface/tgshop_common_interface.iml" filepath="$PROJECT_DIR$/tgshop_parent/tgshop_common_interface/tgshop_common_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tgshop_parent/tgshop_common_pojo/tgshop_common_pojo.iml" filepath="$PROJECT_DIR$/tgshop_parent/tgshop_common_pojo/tgshop_common_pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tgshop_parent/tgshop_common_utils/tgshop_common_utils.iml" filepath="$PROJECT_DIR$/tgshop_parent/tgshop_common_utils/tgshop_common_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tgshop_parent/tgshop_parent.iml" filepath="$PROJECT_DIR$/tgshop_parent/tgshop_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tgshop_parent/tgshop_service_sellergoods/tgshop_service_sellergoods.iml" filepath="$PROJECT_DIR$/tgshop_parent/tgshop_service_sellergoods/tgshop_service_sellergoods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tgshop_parent/tgshop_web_manager/tgshop_web_manager.iml" filepath="$PROJECT_DIR$/tgshop_parent/tgshop_web_manager/tgshop_web_manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tgshop_parent/tgshop_web_shop/tgshop_web_shop.iml" filepath="$PROJECT_DIR$/tgshop_parent/tgshop_web_shop/tgshop_web_shop.iml" />
+    </modules>
+  </component>
+</project>

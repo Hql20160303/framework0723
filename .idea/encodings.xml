@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../SpringSecurityDemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_jpa" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springbootdemo01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springbootdemo02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboottransactional" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sptingbootdemo03" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tgshop_parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tgshop_parent/tgshop_common_config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tgshop_parent/tgshop_common_dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tgshop_parent/tgshop_common_interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tgshop_parent/tgshop_common_pojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tgshop_parent/tgshop_common_utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tgshop_parent/tgshop_service_sellergoods" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tgshop_parent/tgshop_web_manager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tgshop_parent/tgshop_web_shop" charset="UTF-8" />
+  </component>
+</project>

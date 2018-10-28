@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+      http://code.alibabatech.com/schema/dubbo
+      http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+      http://www.springframework.org/schema/security
+      http://www.springframework.org/schema/security/spring-security.xsd">
+
+
+    <http pattern="/*.html" security="none"/>
+    <http pattern="/css/**" security="none"/>
+    <http pattern="/img/**" security="none"/>
+    <http pattern="/js/**" security="none"/>
+    <http pattern="/plugins/**" security="none"/>
+    <http pattern="/seller/add.do" security="none"/>
+
+    <http use-expressions="false">
+        <intercept-url pattern="/**" access="ROLE_SELLER"/>
+        <!--
+            开启表单验证
+            username-parameter="username"
+            password-parameter="password"
+            login-page       :登录页面名称  以  / 开始
+            default-target-url :登录成功后跳转的页面
+            login-processing-url:提交的路径的设置 默认值"/login" 可以修改
+        -->
+        <form-login login-page="/shoplogin.html" default-target-url="/admin/index.html" always-use-default-target="true" authentication-failure-url="/shoplogin.html"/>
+        <!-- 不使用csrf的校验 -->
+        <csrf disabled="true"/>
+        <!-- 配置框架页面不拦截 -->
+        <headers>
+            <frame-options policy="SAMEORIGIN"/>
+        </headers>
+        <!-- 注销 -->
+        <logout logout-url="/logout" logout-success-url="/shoplogin.html"/>
+    </http>
+
+
+    <beans:bean id="passwordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+
+    <authentication-manager>
+        <!-- 认证的提供者 -->
+        <authentication-provider user-service-ref="userDetailsService">
+            <password-encoder ref="passwordEncoder"/>
+        </authentication-provider>
+    </authentication-manager>
+
+
+    <!-- 配置自定义的认证类 -->
+    <beans:bean id="userDetailsService" class="com.bigdata.service.UserDetailsServiceImpl">
+        <beans:property name="sellerService" ref="sellerService"/>
+    </beans:bean>
+
+    <!-- 引用dubbo 服务 -->
+    <dubbo:application name="tgshop_web_shop" />
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    <dubbo:reference id="sellerService" interface="com.bigdata.service.SellerService"/>
+
+</beans:beans>

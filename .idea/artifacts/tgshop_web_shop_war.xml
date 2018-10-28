@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="tgshop_web_shop:war">
+    <output-path>$PROJECT_DIR$/tgshop_parent/tgshop_web_shop/target</output-path>
+    <root id="archive" name="tgshop_web_shop-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="tgshop_web_shop:war exploded" />
+    </root>
+  </artifact>
+</component>
